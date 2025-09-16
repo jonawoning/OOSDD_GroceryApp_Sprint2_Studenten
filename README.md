@@ -1,10 +1,40 @@
-# GroceryApp sprint2 
+# GroceryApp sprint2
+#
+## GitFlow Workflow
 
-## Docentversie  
+Dit project maakt gebruik van een aangepaste GitFlow-structuur.  
+Hieronder staat uitgelegd hoe we met branches werken en hoe je nieuwe code toevoegt.
+
+### Branches
+- **main**  
+  Bevat de stabiele productiecode. Alleen releases en hotfixes komen hier terecht.
+
+- **develop**  
+  Hier wordt alle ontwikkelcode samengebracht vanuit feature-branches.  
+  Beschouw dit als de "werkversie" die klaarstaat voor de volgende release.
+
+- **release/**  
+  Wordt pas aangemaakt als de develop branch stabiel genoeg is om een release te maken.  
+  Bijvoorbeeld: `release/release-v1.0.0`.
+
+- **feature/**  
+  Elke nieuwe feature of use case krijgt zijn eigen branch.  
+  Bijvoorbeeld:
+    - `feature/UC05`
+    - `feature/UC06`
+
+- **hotfix/**  
+  Wordt gebruikt om dringende fixes te doen op productiecode.  
+  Bijvoorbeeld: `hotfix/hotfix-v1.0.1`.
+  Deze word vanuit de main branch gemaakt en na afronding gemerged naar zowel main als develop.
+
+#
+### Docentversie  
 In deze versie zijn de wijzigingen doorgevoerd en is de code compleet.  
 
-## Studentversie:  
-### UC04 Kiezen kleur boodschappenlijst  
+### Studentversie:  
+
+#### UC04 Kiezen kleur boodschappenlijst  
 Is compleet.
 
 ### UC05 Product op boodschappenlijst plaatsen:   
