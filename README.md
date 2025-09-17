@@ -1,5 +1,5 @@
 # GroceryApp sprint2
-#
+
 ## GitFlow Workflow
 
 Dit project maakt gebruik van een aangepaste GitFlow-structuur.  
