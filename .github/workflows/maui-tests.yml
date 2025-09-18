@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feature/UC05
       - infra/test
   pull_request:
     branches:
