@@ -97,4 +97,8 @@
 	  </None>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Content Include="Views\LoginView.xaml" />
+	</ItemGroup>
+
 </Project>
