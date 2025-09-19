@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm="clr-namespace:Grocery.App.ViewModels"
              x:Class="Grocery.App.Views.LoginView"
+             xmlns:vm="clr-namespace:Grocery.App.ViewModels"
              x:DataType="vm:LoginViewModel"
              Title="LoginView">
     <StackLayout Padding="20" VerticalOptions="Center">
