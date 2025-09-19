@@ -1,10 +1,40 @@
-# GroceryApp sprint2 
+# GroceryApp sprint2
 
-## Docentversie  
+## GitFlow Workflow
+
+Dit project maakt gebruik van een aangepaste GitFlow-structuur.  
+Hieronder staat uitgelegd hoe we met branches werken en hoe je nieuwe code toevoegt.
+
+### Branches
+- **main**  
+  Bevat de stabiele productiecode. Alleen releases en hotfixes komen hier terecht.
+
+- **develop**  
+  Hier wordt alle ontwikkelcode samengebracht vanuit feature-branches.  
+  Beschouw dit als de "werkversie" die klaarstaat voor de volgende release.
+
+- **release/**  
+  Wordt pas aangemaakt als de develop branch stabiel genoeg is om een release te maken.  
+  Bijvoorbeeld: `release/release-v1.0.0`.
+
+- **feature/**  
+  Elke nieuwe feature of use case krijgt zijn eigen branch.  
+  Bijvoorbeeld:
+    - `feature/UC05`
+    - `feature/UC06`
+
+- **hotfix/**  
+  Wordt gebruikt om dringende fixes te doen op productiecode.  
+  Bijvoorbeeld: `hotfix/hotfix-v1.0.1`.
+  Deze word vanuit de main branch gemaakt en na afronding gemerged naar zowel main als develop.
+
+#
+### Docentversie  
 In deze versie zijn de wijzigingen doorgevoerd en is de code compleet.  
 
-## Studentversie:  
-### UC04 Kiezen kleur boodschappenlijst  
+### Studentversie:  
+
+#### UC04 Kiezen kleur boodschappenlijst  
 Is compleet.
 
 ### UC05 Product op boodschappenlijst plaatsen:   
@@ -17,7 +47,7 @@ Is compleet.
 ### UC06 Inloggen  
 Een collega is ziek maar heeft al een deel van de inlogfunctionaliteit gemaakt.  
 Dit betreft het Loginscherm (LoginView) met bijbehorend ViewModel (LoginViewModel),  
-maar ook al een deel van de authenticatieService (AuthService in Grocery.Core),  
+maar ook al een deel van de authenticatieService (AuthServnn,mnmice in Grocery.Core),  
 de clientrepository (ClientRepository in Grocery.Core.Data)  
 en de client class (Client in Grocery.Core).  
 De opdracht is om zelfstandig de login functionaliteit te laten werken.  
@@ -31,4 +61,4 @@ De opdracht is om zelfstandig de login functionaliteit te laten werken.
 6. In App.xaml.cs staat /*LoginViewModel viewModel*/ haal hier /* en */ weg, zodat het LoginViewModel beschikbaar komt.  
 7. In App.xaml.cs staat //MainPage = new LoginView(viewModel); Haal hier de // weg en zet de regel erboven in commentaar, zodat AppShell wordt uitgeschakeld.  
 8. Uncomment de route naar het Login scherm in AppShell.xaml.cs: //Routing.RegisterRoute("Login", typeof(LoginView)); 
-
+ 
